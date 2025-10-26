@@ -27,6 +27,7 @@ const Home = () => {
     }
   };
 
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -51,8 +52,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-gray-800">Browse by Category</h2>
+
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {categories.map((category) => (
               <Link
@@ -77,7 +79,7 @@ const Home = () => {
               View All →
             </Link>
           </div>
-          
+
           {loading ? (
             <div className="text-center py-12">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary-600 border-t-transparent"></div>
@@ -131,6 +133,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+
   );
 };
 
